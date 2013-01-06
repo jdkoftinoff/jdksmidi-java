@@ -3,7 +3,7 @@
  *
  * Created on 12 September 2006, 17:35 By Jeff Koftinoff <jeffk@jdkoftinoff.com>
  *
- * https://clicker.jdkoftinoff.com/projects/trac/jdks/wiki/libjdkmidijava
+ * https://github.com/jdkoftinoff/jdksmidi-java
  *
  *  libjdkmidijava Java Class Library for MIDI
  *
