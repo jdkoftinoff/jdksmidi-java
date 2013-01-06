@@ -1,17 +1,14 @@
 /*
  * MIDIMessageTest.java JUnit based test
  * 
- * Created on 10 September 2006, 17:20
- * 
- * https://clicker.jdkoftinoff.com/projects/trac/jdks/wiki/libjdkmidijava
- * 
  * libjdkmidijava Java Class Library for MIDI
  * 
+ * https://github.com/jdkoftinoff/jdksmidi-java
+ *
  * Copyright (C) 2006 J.D. Koftinoff Software, Ltd. www.jdkoftinoff.com
  * jeffk@jdkoftinoff.com
  * 
  * *** RELEASED UNDER THE GNU GENERAL PUBLIC LICENSE (GPL) September 11, 2006
- * ***
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -93,10 +90,9 @@ public class MIDIMessageTest extends TestCase
         int velocity = 64;
         MIDIMessage instance = new MIDIMessage();
 
-        instance.setNoteOff(channel, note, velocity);
-
         try
         {
+            instance.setNoteOff(channel, note, velocity);
             assertTrue(instance.isChannelMessage());
             assertTrue(instance.isNoteOff());
             assertFalse(instance.isNoteOn());
@@ -119,9 +115,14 @@ public class MIDIMessageTest extends TestCase
 
         MIDIMessage instance = new MIDIMessage();
 
+        int channel = 1;
+        int note = 96;
+        int velocity = 64;        
+
         try
         {
-            int expResult = 0;
+            instance.setNoteOn(channel, note, velocity);
+            int expResult = 1;
             int result = instance.getChannel();
             assertEquals(expResult, result);
         }

@@ -3,8 +3,8 @@
  * 
  * libjdkmidijava Java Class Library for MIDI
  * 
- * https://clicker.jdkoftinoff.com/projects/trac/jdks/wiki/libjdkmidijava
- * 
+ *  https://github.com/jdkoftinoff/jdksmidi-java
+ *
  * Copyright (C) 2006 J.D. Koftinoff Software, Ltd. www.jdkoftinoff.com
  * jeffk@jdkoftinoff.com
  * 
